@@ -1,0 +1,546 @@
+@charset "utf-8";
+.exp{
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.title, .main_wrap p{
+  text-align: center;
+  color: #CB9304;
+  text-shadow:1px 1px 1px #a18b8b;
+}
+.frontend{
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+.title{
+  font-size: 55px;
+}
+.title span{
+  color: #6F5000;
+}
+.title2{
+  text-align: center;
+  font-size: 30px;
+}
+.title2 b{
+  color:#b28a24
+}
+
+span{
+  font-weight: 600;
+  margin-right: 20px;
+  line-height: 30px;
+}
+h2{
+  text-align: center;
+  font-size: 50px;
+  color: #D17100;
+  text-shadow: 1px 1px 1px rgba(233, 119, 49, 0.5);
+}
+/* Intro 서식 */
+.main_wrapper{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.main_wrap_left, .main_wrap_right{
+  width: 33%;
+}
+.main_wrap_left span, .main_wrap_right span{
+  display: block;
+  position: relative;
+}
+
+.main_img{
+  width: 500px;
+  margin: 50px auto;
+}
+.main_img img{
+  width: 100%;
+  animation: main_img 3s linear;
+}
+@keyframes main_img{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+/* 키워드 서식 */
+.main_p{
+  position: relative;
+  animation: shaking 2s infinite;
+  text-shadow: 0px 1px 2px #ccc;
+  font-size: 18px;
+}
+.s01{
+  top:30px;left: 70px;
+  color: rgb(169, 123, 63);
+  text-shadow: 0px 1px 2px #a18b8b;
+  font-size: 22px;
+  animation: shake2 3s infinite;
+
+}
+.s02{
+  top:100px;left: 250px;
+  color: #6F5000;
+  font-size: 20px;
+  animation: shake 4s infinite;
+}
+.s03{
+  top:300px;left: 320px;
+  color: #94762c;
+  font-size: 22px;
+  animation: shake2 3s infinite;
+
+  
+}
+.s04{
+  color: #CB9304;
+  font-size: 20px;
+  top:220px;left:100px;
+  animation: shake 4s infinite;
+
+}
+.s05{
+  top: 350px;left:10px;
+  color: #9f6a00;
+  font-size: 22px;
+  text-shadow:0px 1px 2px #5c5656;
+  animation: shake2 3s infinite;
+
+}
+.s06{
+  top: 20px;
+  color: #4e3902;
+  font-size: 20px;
+  animation: shake 4s infinite;
+
+}
+.s07{
+  top: 360px;left: 200px;
+  color: #675425;
+  font-size: 22px;
+  animation: shake2 3s infinite;
+
+}
+@keyframes shake{
+  from{
+      opacity: 0.8;
+  }
+  to{
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+@keyframes shake2{
+  from{
+    opacity: 0.6;
+  }
+  to{
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+@keyframes shaking{
+  0%{
+    transform: rotate(5deg);
+  }
+  50%{
+    transform: rotate(-5deg);
+  }
+  100%{
+    transform: rotate(5deg);
+  }
+}
+
+
+
+
+/* 로고 */
+.logo_simbol_wrap{
+  width: 1200px;
+  margin: 0 auto;
+  
+}
+.logo_wrap{
+  width:800px;
+  margin: 20px auto;
+
+}
+.logo_simbol img{
+  width: 100%;
+}
+.logo_simbol{
+  margin: 100px 0px;
+}
+
+
+
+
+/* profile 서식 */
+.p_txt{
+  transform: translate(-30px,20px);
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 550;
+  color: #5c5656;
+}
+.p_txt > li:last-of-type{
+  transform: translate(15px,60px);
+  border-radius: 20px;
+  border: 1px solid #736B66;
+  width: 170px;
+}
+.p_txt > li:last-of-type a{
+  color: #736B66;
+  font-size: 16px;
+}
+
+h3{
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.p_wrap{
+  color: #5c5656;
+  width: 1000px;
+  display: flex;
+  margin: -40px auto;
+}
+
+
+
+.p_right{
+  margin-left: 50px;
+}
+.p_list{
+  display: flex;
+}
+
+.like{
+  margin-left: 100px;
+}
+.license, .like{
+  margin-top: 50px;
+
+}
+
+
+/*------ skill bar 서식 ------*/
+
+.skill_bar{
+  margin: 50px 0;
+  z-index: -20;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: #ffffff;
+  padding: 1px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #5c5656;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(254, 254, 254, 0.5);
+}
+
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #ffbb62;
+  display: inline-block;
+  padding: 1px 0 1px 10px;
+  border-radius: inherit;
+  animation: load 5s 0s;
+  -webkit-animation: load 5s 0s;
+  -moz-animation: load 5s 0s;
+  -o-animation: load 5s 0s;
+}
+
+.bar.back::before{
+  background-color: #ffa75f;
+}
+.bar.middle::before{
+  background-color: #ffbb62;
+}
+.bar.middle2::before{
+  background-color: #ffa75f;
+}
+.bar.middle3::before{
+  background-color: #ffbb62;
+}
+.bar.middle4::before{
+  background-color: #ffa75f;
+}
+.bar.front::before{
+  background-color: #ffbb62;
+}
+
+.bar.html5::before{
+  width: calc(80% - 10px);
+}
+.bar.css3::before{
+  width: calc(80% - 10px);
+}
+.bar.javascript::before{
+  width: calc(75% - 10px);
+}
+.bar.jquery::before{
+  width: calc(70% - 10px);
+}
+.bar.react::before{
+  width: calc(70% - 10px);
+}
+.bar.sql::before{
+  width: calc(65% - 10px);
+}
+.bar.bootstrap::before{
+  width: calc(60% - 10px);
+}
+
+/* project tab서식 */
+
+#container{
+ margin-top: 100px;
+}
+.is-active{
+  font-weight: bold;
+  border-bottom: solid 3px #757464;
+  color:#F2E5BD;
+  background-color: #F2E5BD;
+}
+
+
+
+.tab_cont_wrap, .tab_cont_wrap4{
+  display: flex;
+  margin: 0 auto;
+  width: 1000px;
+  height: 600px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.con_wrap{
+  display: flex;
+  justify-content: center;
+}
+.con_wrap li{
+  cursor: pointer;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 18px;  
+  color: #736B66;
+  padding: 10px 59px;
+}
+
+.con_wrap li:hover{
+  transition: .3s;
+  background-color: #736b66;
+  color:#F2E5BD;
+}
+.link_wrap{
+  border-radius: 5px;
+  background-color: #F2E5BD;
+  border: solid 1px #736B66;
+  display: block;
+  width:130px; height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.link_wrap:hover{
+  background-color: rgb(255, 242, 179);
+}
+
+.btn_wrap{
+  display: flex;
+  margin-top: 50px;
+}
+.website_btn{
+  color: #736B66;
+}
+
+.con_txt{
+  width: 600px;
+  margin-top: 60px;
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 35px;
+}
+
+
+.mobile_ofd{
+  margin-left: 127px;
+}
+
+/* 개인프젝 */
+.con_wrap2{
+  display: grid;
+  width: 1000px;
+  padding: 10px;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(2,300px);
+  margin: 0 auto;
+}
+.con_wrap2 li{
+  width: 495px;
+  height: 290px;
+  overflow: hidden;
+}
+figure{
+  position: relative;
+}
+.detail_btn{
+  font-size: 18px;
+  display:block;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  border: solid 1px #fff;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 50px;
+  transition: 1s;
+}
+.detail_btn:hover{
+  background-color: #fff;
+  color: #333;
+  border-color: #333;
+  font-weight: 600;
+}
+
+.project_title{
+  font-size: 30px;
+  transform: translate(-100px,-10px);
+}
+
+.project_desc{
+  display: inline-block;
+  text-justify: auto;
+  font-weight: normal;
+  text-align: left;  
+
+}
+.con_wrap2 img{
+  width: 100%;
+}
+.con_wrap2 img:hover{
+  scale: 1.1;
+  transition: .3s;
+
+}
+
+
+.item{
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+  margin: 60px auto;
+  padding-left: 50px;
+  padding-bottom: 50px;
+
+}
+.cont_img{
+  width: 550px;
+  overflow: hidden;
+}
+.img1 img{
+  width: 180%;
+  height: 180%;
+  transform: translate(-220px,-120px);
+}
+.img2 img{
+  width: 160%;
+  height: 160%;
+  transform: translate(-210px,-120px);
+}
+.img3 img{
+  height: 130%;
+  transform: translate(-100px,-80px);
+}
+.img4 img{
+  width: 150%;
+  height: 150%;
+  transform: translate(-135px,-115px);
+}
+.con_txt{
+  width:40%;
+}
+
+
+
+/* Contact */
+#contact_wrap{
+  display: flex;
+  justify-content: space-around;
+  margin: 0px auto 100px auto;
+  width: 1080px;
+}
+.contact{
+  margin: 120px auto;
+}
+.contact span{
+  font-size: 22px;
+}
+.contact_sub{
+  text-indent: 100px;
+  line-height: 30px;
+  transform: translateY(-10px);
+}
+
+.contact_sub li{
+  font-size: 18px;
+}
+.contact_sub li  span, .phone{
+  color: #5c5656;
+  font-size: 18px;
+}
+.contact_img{
+  position: relative;
+  top:100px;
+  left: 100px;
+  width:300px;
+  overflow: hidden;
+  animation:myimg 3s infinite;
+
+}
+@keyframes myimg{
+  0%{
+    transform:rotate(7deg);
+  }
+  50%{
+    transform: rotate(-7deg);
+  }
+  100%{
+    transform: rotate(7deg);
+  }
+}
+.contact_img img{
+  width: 100%;
+}
