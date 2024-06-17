@@ -1,0 +1,83 @@
+*{margin: 0px; padding: 0px;}
+ul,ol,li{
+  list-style: none;
+}
+
+/* // 탭 전체 스타일 */
+.project_tab{
+  margin: 50px auto 0px auto;
+  padding-bottom: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 1000px;
+  height: 70vh;
+}
+
+/* // 탭스타일 */
+.tab_item{
+  width: calc(100%/4);
+  height: 50px;
+  border-bottom:3px solid #333;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.tab_item:hover{
+  opacity: 0.75;
+}
+
+/* // 라디오 버튼 UI삭제 */
+input[name="tab_item"]{
+  display: none;
+}
+
+/* // 탭 컨텐츠 스타일 */
+.tab_content{
+  display: none;
+  padding:40px 40px 0;
+  clear: both;
+  overflow: hidden;
+}
+
+/* // 선택 된 탭 콘텐츠를 표시 */
+#disney:checked ~ #disney_content,
+#netmarble:checked ~ #netmarble_content,
+#ofd_studio_admin:checked ~ #ofd_studio_admin_content,
+#ofd_studio_user:checked ~ #ofd_studio_user_content{
+  display: block;
+}
+
+/* // 선택된 탭스타일 */
+.project_tab input:checked + .tab_item{
+  background-color: #333;
+  color: #fff;
+}
+
+
+.contents_wrap{
+  display: flex;
+  justify-content:space-around;
+}
+.cont_img{
+  /* width: 60%; */
+  height: 55vh;
+  /* background-color: yellowgreen; */
+}
+.img1{
+  /* width: 90%; */
+}
+.content_text{
+    width: 300px;
+    margin-top: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+    line-height: 35px;
+  
+  
+}

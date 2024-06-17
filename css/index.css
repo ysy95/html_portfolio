@@ -243,21 +243,8 @@ h3{
     width: 0%
   }
 }
-@-webkit-keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-moz-keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-o-keyframes load{
-  from {
-    width: 0%
-  }
-}
+
+
 
 .bar{
   background-color: #ffffff;
@@ -277,9 +264,7 @@ h3{
   padding: 1px 0 1px 10px;
   border-radius: inherit;
   animation: load 5s 0s;
-  -webkit-animation: load 5s 0s;
-  -moz-animation: load 5s 0s;
-  -o-animation: load 5s 0s;
+
 }
 
 .bar.back::before{
@@ -325,79 +310,7 @@ h3{
 
 /* project tab서식 */
 
-#container{
- margin-top: 100px;
-}
-.is-active{
-  font-weight: bold;
-  border-bottom: solid 3px #757464;
-  color:#F2E5BD;
-  background-color: #F2E5BD;
-}
 
-
-
-.tab_cont_wrap, .tab_cont_wrap4{
-  display: flex;
-  margin: 0 auto;
-  width: 1000px;
-  height: 600px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.con_wrap{
-  display: flex;
-  justify-content: center;
-}
-.con_wrap li{
-  cursor: pointer;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  font-size: 18px;  
-  color: #736B66;
-  padding: 10px 59px;
-}
-
-.con_wrap li:hover{
-  transition: .3s;
-  background-color: #736b66;
-  color:#F2E5BD;
-}
-.link_wrap{
-  border-radius: 5px;
-  background-color: #F2E5BD;
-  border: solid 1px #736B66;
-  display: block;
-  width:130px; height: 40px;
-  line-height: 40px;
-  text-align: center;
-}
-
-.link_wrap:hover{
-  background-color: rgb(255, 242, 179);
-}
-
-.btn_wrap{
-  display: flex;
-  margin-top: 50px;
-}
-.website_btn{
-  color: #736B66;
-}
-
-.con_txt{
-  width: 600px;
-  margin-top: 60px;
-  padding: 10px;
-  box-sizing: border-box;
-  line-height: 35px;
-}
-
-
-.mobile_ofd{
-  margin-left: 127px;
-}
 
 /* 개인프젝 */
 .con_wrap2{
@@ -451,7 +364,7 @@ figure{
   width: 100%;
 }
 .con_wrap2 img:hover{
-  scale: 1.1;
+  /* scale: 1.1; */
   transition: .3s;
 
 }

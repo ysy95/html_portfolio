@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link type="text/css" rel="stylesheet" href="./css/common.css"/>
-  <link type="text/css" rel="stylesheet" href="./css/index.css"/>
+  <link rel="stylesheet" href="./css/common.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/index.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/tab.css" type="text/css"/>
   <title>서영's Portfolio</title>
 </head>
 <body>
@@ -85,7 +86,7 @@
           </div>
         </div>
 
-      </section>
+    </section>
 
 
       <!-- 프로필 영역 -->
@@ -145,9 +146,175 @@
       </section>
 
       <!-- 팀프로젝트 -->
-      <section id='container'>
+      <section id='team_project_wrap'>
         <h2>PROJECT</h2>
         <p class='exp'>HTML, CSS, JS, Jqeury, PHP, Mysql을 사용하여 팀으로한 프로젝트입니다.</p>
+
+        <div class="project_tab">
+          <!-- 탭메뉴 -->
+          <input id="disney" type="radio" name="tab_item" checked>
+          <label for="disney" class="tab_item">월트 디즈니 코리아</label>
+        
+          <input id="netmarble" type="radio" name="tab_item">
+          <label for="netmarble" class="tab_item">넷마블</label>
+        
+          <input id="ofd_studio_admin" type="radio" name="tab_item">
+          <label for="ofd_studio_admin" class="tab_item">OFD_STUDIO(관리자)</label>
+        
+          <input id="ofd_studio_user" type="radio" name="tab_item">
+          <label for="ofd_studio_user" class="tab_item">OFD_STUDIO(사용자)</label>
+        
+          <!-- 탭메뉴 내용 -->
+          <!-- 디즈니 코리아 -->
+          <div id="disney_content" class="tab_content">
+            <div class="contents_wrap">
+
+              <div class="cont_img img1">
+                <img src="./img/project01.png" alt="disneyKorea">
+              </div>
+              <div>
+                <ul class="content_text">
+                  <li>
+                    프로젝트 명 : 디즈니 코리아(Disney Korea)
+                  </li>
+                  <li>
+                    layout : response Wep page Renewal
+                    <p>브랜딩 웹사이트 반응형 웹개발</p>
+                  </li>
+                  <li>
+                    참여도 : 100% 
+                  </li>
+                  <li>개발언어 : HTML5, CSS3,JS, Jquery 
+    </li>
+                  <li>개발기간 : 2023.01.17 ~ 2023.01.20</li>
+                </ul>
+                <p class="view_btn_wrap">
+                  <a href="https://ysy95.github.io/DisneyKorea" title="disneyKorea">Web Site View</a>
+                  <a href="http://ysy2022.dothome.co.kr/portfolio_ppt/ppt/waltdisnekorea.html" title="detail_view">Detail View</a>
+                  </p>
+              </div>
+            </div>
+            <!-- contents_wrap 끝 -->
+          </div>
+          <!-- 넷마블 -->
+          <div id="netmarble_content" class="tab_content">
+            <div class="contents_wrap">
+
+              <div class="cont_img img2">
+                <img src="./img/project02.png" alt="netmarble">
+              </div>
+              <div>
+                <ul class="content_txt">
+                  <li>프로젝트 명:넷마블(netmarble)
+                    <p>시가총액 100대 기업 적응형 웹개발</p>
+                  </li>
+                  <li>
+                    layout : 적응형 웹(Adaptive Web)
+                  </li>
+                  <li>
+                    참여도 : 75%
+                  </li>
+                  <li>
+                    개발언어 : HTML5, CSS3,JS, Jquery, PHP, Bootstrap
+                  </li>
+                  <li>
+                    개발기간 : 2023.02.06 ~ 2023.03.15
+                  </li>
+                </ul>
+              <p class="view_btn_wrap">
+                <a href="http://ysy2022.dothome.co.kr/Undefined/index.html" title="netmarble">Web Site View</a>                  
+                <a href="http://ysy2022.dothome.co.kr/portfolio_ppt/ppt/A_netmarble.html" title="detail_view">Detail View</a>
+              </p>
+              </div>
+            </div>
+          </div>
+          <!-- OFD스튜디오 관리자 -->
+          <div id="ofd_studio_admin_content" class="tab_content">
+            <div class="contents_wrap">
+
+              <div class="cont_img img3">
+                <img src="./img/project03.png" alt="ofd_studio_admin">
+              </div>
+              <div>
+              <ul class="content_text">
+                <li>
+                  프로젝트 명 : OFD_STUDIO 
+                  <p>LMS학습지원 시스템 first project(관리자)</p>
+                </li>
+                <li>
+                  layout : 적응형 웹
+                </li>
+                <li>
+                  참여도 : 60%
+                </li>
+                <li>
+                  개발언어 : HTML5, CSS3, php, js, mysql
+   
+                </li>
+                <li>
+                  개발기간 : 2023.03.28 ~ 2023.04.26
+                </li>
+              </ul>
+              <p class="view_btn_wrap">
+                <a href="http://ysy2022.dothome.co.kr/revolution/main.php" title="ofd_studio_admin">Web Site View</a>
+                <a href="http://ysy2022.dothome.co.kr/portfolio_ppt/ppt/ofd_admin.html" title="detail_view">Detail View</a>
+                </p>
+      
+  
+              </div>
+            </div>
+          </div>
+
+          <!-- OFD스튜디오 사용자 -->
+          <div id="ofd_studio_user_content" class="tab_content">
+            <div class="contents_wrap">
+
+              <div class="cont_img img4">
+                <img src="./img/project04.png" alt="ofd_studio_user">
+              </div>
+  
+              <div>
+              
+                <ul class="content_text">
+                  <li>
+                    프로젝트 명 : OFD_STUDIO
+                <p>LMS 학습지원시스템 second project(사용자)</p>
+                  </li>
+                  <li>
+                    layout : mobile
+                  </li>
+                  <li>
+                    참여도 : 60% 퍼블리싱, 연동, 보조, 데이터베이스
+                  </li>
+                  <li>
+                    개발언어 : HTML5, CSS3,JS, react, php, mysql
+                  </li>
+                  <li>
+                    개발기간 : 2023.04.27 ~ 2023.05.19
+                  </li>
+                </ul>
+                <p class="view_btn_wrap">
+                  <span class="link_wrap">
+                    <a href="http://ysy2022.dothome.co.kr/revolution_user/index.html#/" title="ofd_studio_user">Web Site View</a>
+                  </span>
+                  <span class="link_wrap">
+                    <a href="http://ysy2022.dothome.co.kr/portfolio_ppt/ppt/ofd_user.html" title="detail_view">Detail View</a>
+                  </span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- project_Tab 끝 -->
+      </section>
+
+
+      <!-- 개인 프로젝트 -->
+      <section id='web_site_wrap'>
+        <h2>Web Site</h2>
+        <p class='exp'>HTML, CSS, JS, Jqeury을 사용하여 clone coding한 개인프로젝트입니다.</p>
 
       </section>
 
