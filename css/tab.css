@@ -16,7 +16,7 @@ ul,ol,li{
 .tab_item{
   width: calc(100%/4);
   height: 50px;
-  border-bottom:3px solid #333;
+  border-bottom:3px solid #727171;
   line-height: 50px;
   font-size: 16px;
   text-align: center;
@@ -28,8 +28,16 @@ ul,ol,li{
   transition: all 0.2s ease;
 }
 
+/* // 선택된 탭스타일 */
+.project_tab input:checked + .tab_item{
+  background-color: #727171;
+  color: #fff;
+}
 .tab_item:hover{
   opacity: 0.75;
+  cursor: pointer;
+  background-color: #727171;
+  color: #fff;
 }
 
 /* // 라디오 버튼 UI삭제 */
@@ -53,31 +61,56 @@ input[name="tab_item"]{
   display: block;
 }
 
-/* // 선택된 탭스타일 */
-.project_tab input:checked + .tab_item{
-  background-color: #333;
-  color: #fff;
-}
 
-
+/* 컨텐츠 가로로 배치 */
 .contents_wrap{
   display: flex;
   justify-content:space-around;
 }
+
 .cont_img{
-  /* width: 60%; */
   height: 55vh;
-  /* background-color: yellowgreen; */
 }
-.img1{
-  /* width: 90%; */
+
+.content_title{
+  font-weight: bold;
 }
+
 .content_text{
-    width: 300px;
-    margin-top: 60px;
+    width: 350px;
+    margin-top: 30px;
     padding: 10px;
     box-sizing: border-box;
-    line-height: 35px;
+    line-height: 40px;
+
   
   
 }
+
+/* 사이트 보러가기 버튼 서식 */
+.view_btn_wrap{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.view_btn_wrap a{
+  display: inline-block;
+  width: 140px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #d1e3ff;
+  color: #477bca;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  border: solid 2px #477bca;
+}
+.view_btn_wrap a:hover{
+  cursor: pointer;
+  color: #fff;
+  background-color: #477bca;
+  transition: .3s;
+}
+
+
