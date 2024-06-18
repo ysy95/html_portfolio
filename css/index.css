@@ -330,11 +330,7 @@ h3{
 .contents_wrap2 img{
   width: 100%;
 }
-.contents_wrap2 img:hover{
-  scale: 1.1;
-  transition: .3s;
 
-}
 figure{
   position: relative;
 }
