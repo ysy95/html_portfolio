@@ -8,7 +8,7 @@ body{
   background-attachment:fixed;
   background-size:cover;
   overflow-x: hidden;
-  margin: 20px 0px 0px 80px;
+  /* margin: 20px 0px 0px 80px; */
   
 }
 h2{
@@ -22,44 +22,41 @@ section{
 
 a{text-decoration: none;}
 header{
-  height: 100%;
-  width: 130px;
-  background-color: #d9f4f9;
-  border-right: solid 1px #ddedf0;
   position: fixed;
-  top: 0px;left: 0px;
+  height: 50px;
+  width: 100%;
+  top: 0px;
   z-index: 9999;
 
 }
 /* 메인로고 */
 h1{
   width: 100px;
-  margin:10px 15px;
+  margin:0px 15px;
 }
 h1 img{
   width: 100%;
-  transform: translate(4px,-2px);
-  
 }
 
-
-#nav ul{
+#nav_list{
   position: fixed;
-  top: 200px;left: 0px;
-  z-index: 10000;  
-  height: 350px;
+  top: 40px; left: 160px;
+  z-index: 10000;
+  width: 100%;
+  /* background-color: #477bca; */
 }
-#main_nav > li{
 
-  width: 180px;
-  font-size: 22px;
+#nav_list > li{
+  display: inline-block;
+  width: 18%;
+  text-align: center;
+  font-size: 26px;
   font-weight: bold;
 }
 .mnu_link{
   display: block;
-  width: 110px;height: 60px;
-  padding-left: 20px;
-  line-height: 65px;
+  width: 180px;height: 40px;
+  line-height: 40px;
   color: #477bca;
   text-shadow: 0px 0px 2px #7996c4;
   transition: .3s;

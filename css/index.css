@@ -44,7 +44,7 @@ h2{
 .main_wrapper{
   display: flex;
   width: 1200px;
-  margin: 0 auto;
+  margin: 100px auto 0px auto;
 }
 .main_wrap_left, .main_wrap_right{
   width: 33%;
