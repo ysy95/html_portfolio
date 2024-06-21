@@ -18,7 +18,7 @@
 .title{
   font-size: 55px;
 }
-.title span{
+.title >span{
   color: #6F5000;
 }
 .title2{
@@ -44,7 +44,7 @@ h2{
 .main_wrapper{
   display: flex;
   width: 1200px;
-  margin: 100px auto 0px auto;
+  margin: 20px auto 0px auto;
 }
 .main_wrap_left, .main_wrap_right{
   width: 33%;
