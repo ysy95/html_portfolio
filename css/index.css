@@ -399,11 +399,16 @@ figcaption:hover{
 
 
 /* Contact */
+#contact{
+  height: 70vh;
+  overflow: hidden;
+}
 #contact_wrap{
   display: flex;
   justify-content: space-around;
-  margin: 0px auto 100px auto;
+  margin: 0px auto 200px auto;
   width: 1080px;
+
 }
 .contact{
   margin: 120px auto;
@@ -426,7 +431,6 @@ figcaption:hover{
 }
 .contact_img{
   position: relative;
-  top:100px;
   left: 100px;
   width:300px;
   overflow: hidden;
