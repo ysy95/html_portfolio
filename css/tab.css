@@ -48,7 +48,7 @@ input[name="tab_item"]{
 /* // 탭 컨텐츠 스타일 */
 .tab_content{
   display: none;
-  padding:40px 40px 0;
+  padding:40px 0px;
   clear: both;
   overflow: hidden;
 }
@@ -69,9 +69,28 @@ input[name="tab_item"]{
 }
 
 .cont_img{
+  width: 550px;
   height: 60vh;
+  overflow: hidden;
 }
 
+.img1 img{
+
+  box-sizing: border-box;
+  width: 180%;
+  transform: translate(-22%,-15%);
+}
+.img2 img{
+  width: 170%;
+  transform: translate(-24%,-15%);
+}
+.img3 img{
+  transform: translateY(-5%);
+}
+.img4 img{
+  width: 160%;
+  transform: translate(-20%,-18%);
+}
 .content_title{
   font-weight: bold;
 }
@@ -82,7 +101,7 @@ input[name="tab_item"]{
     padding: 10px;
     box-sizing: border-box;
     line-height: 40px;
-
+    z-index: 99;
   
   
 }

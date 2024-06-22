@@ -8,10 +8,11 @@ body{
   background-attachment:fixed;
   background-size:cover;
   overflow-x: hidden;
-  /* margin: 20px 0px 0px 80px; */
   
 }
-
+main{
+  width: 100%;
+}
 section{
   height: 100vh;
   padding: 50px;

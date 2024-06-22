@@ -3,7 +3,7 @@
 let Top = document.getElementById('top_btn');
 
 window.addEventListener('scroll',function(){
-  if(this.scrollY >200){
+  if(this.scrollY >300){
     Top.classList.add('on');
   }else{
     Top.classList.remove('on');
