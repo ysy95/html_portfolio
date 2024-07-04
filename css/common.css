@@ -27,7 +27,7 @@ header{
   z-index: 999;
 
 }
-#nav{
+#gnb{
   display: flex;
   height: 80px;
   background-color: rgba(192, 216, 255, 0.9);
@@ -67,12 +67,12 @@ h1 img:hover{
 .mnu_link:hover{
   background-color: rgba(93, 123, 230, 0.7);
   color: #fff;
-  scale: 1.1;
+  transform:scale(1.1);
 }
 .mnu_act{
-  background-color: rgba(93, 123, 230, 0.7);
-  color: #fff;
-  scale: 1.1;
+  color: #15547b!important;
+  font-weight: bold;
+  font-size: 30px!important;
 }
 
 /* 스크롤바 서식 */
