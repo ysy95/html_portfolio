@@ -44,7 +44,7 @@ h2{
 .main_wrapper{
   display: flex;
   width: 1200px;
-  margin: 20px auto 0px auto;
+  margin: 0px auto;
 }
 .main_wrap_left, .main_wrap_right{
   width: 33%;
@@ -406,7 +406,7 @@ figcaption:hover{
 #contact_wrap{
   display: flex;
   justify-content: space-around;
-  margin: 0px auto 200px auto;
+  margin: 0px auto;
   width: 1080px;
 
 }

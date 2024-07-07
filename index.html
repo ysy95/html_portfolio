@@ -9,9 +9,10 @@
   <!-- 파비콘 -->
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
   <!-- 스크립트 -->
-  <script src="./js/index.js" defer></script>
+  <script type="text/javascript" src="./js/index.js" defer></script>
   <!-- 제이쿼리 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/snowfall.jquery.js" defer></script>
   <title>서영's Portfolio</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
   <header>
     <nav id="gnb">
       <!-- 메인로고 -->
-      <h1>
+      <h1 id="main_logo">
         <a href="index.html" title="메인페이지 바로가기">
           <img src="./img/mainLogo.png" alt="mainLogo">
         </a>
@@ -27,19 +28,19 @@
       <!-- 네비게이션 -->
       <ul id="nav_list">
         <li>
-          <a href="#" class="mnu_link">Logo</a>
+          <a href="#" id="startButton" class="mnu_link canvasBtn">Logo</a>
         </li>
         <li>
-          <a href="#" class="mnu_link">Profile</a>
+          <a href="#" id="startButton" class="mnu_link canvasBtn">Profile</a>
         </li>
         <li>
-          <a href="#" class="mnu_link">Project</a>
+          <a href="#" id="startButton" class="mnu_link canvasBtn">Project</a>
         </li>
         <li>
-          <a href="#" class="mnu_link">Web Site</a>
+          <a href="#" id="startButton" class="mnu_link canvasBtn">Web Site</a>
         </li>
         <li>
-          <a href="#" class="mnu_link">Contact</a>
+          <a href="#" id="startButton" class="mnu_link canvasBtn">Contact</a>
         </li>
       </ul>
     </nav>
@@ -82,6 +83,7 @@
         차분하게 협력하여 소통하는 개발자 <b>여서영</b>입니다.
       </div>
     </section>
+
 
     <!-- 메인로고 -->
     <section class='logo_simbol'>
@@ -457,4 +459,5 @@
     </address>
   </footer>
 </body>
+<canvas id="canvas"></canvas>
 </html>
