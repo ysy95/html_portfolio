@@ -1,0 +1,19 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* 기본서식 */
+
+:root{
+  --color01: #CB9304;
+  --color02: #b28a24;
+  --color03:#D17100;
+  --color04:#9f6a00;
+  --color05:#4e360e;
+  --bar-color01:#ffbb62;
+  --bar-color02:#ffa75f;
+
+  --m-auto:0 auto;
+  --margin01:50px auto;
+
+  --font-size01:16px;
+  --font-size02:18px;
+}

@@ -7,7 +7,7 @@
 
 .title, .main_wrap p{
   text-align: center;
-  color: #CB9304;
+  color: var(--color01);
   text-shadow:1px 1px 1px #a18b8b;
 }
 .frontend{
@@ -26,7 +26,7 @@
   font-size: 30px;
 }
 .title2 b{
-  color:#b28a24
+  color:var(--color02);
 }
 
 .main_wrap span{
@@ -37,14 +37,14 @@
 h2{
   text-align: center;
   font-size: 50px;
-  color: #D17100;
+  color: var(--color03);
   text-shadow: 1px 1px 1px rgba(233, 119, 49, 0.5);
 }
 /* Intro 서식 */
 .main_wrapper{
   display: flex;
   width: 1200px;
-  margin: 0px auto;
+  margin: var(--m-auto);
 }
 .main_wrap_left, .main_wrap_right{
   width: 33%;
@@ -56,7 +56,7 @@ h2{
 
 .main_img{
   width: 500px;
-  margin: 50px auto;
+  margin: var(--margin01);
 }
 .main_img img{
   width: 100%;
@@ -80,7 +80,7 @@ h2{
 }
 .s01{
   top:30px;left: 70px;
-  color: rgb(169, 123, 63);
+  color: #a97b3f;
   text-shadow: 0px 1px 2px #a18b8b;
   font-size: 22px;
   animation: shake2 3s infinite;
@@ -101,7 +101,7 @@ h2{
   
 }
 .s04{
-  color: #CB9304;
+  color: var(--color01);
   font-size: 20px;
   top:220px;left:100px;
   animation: shake 4s infinite;
@@ -109,7 +109,7 @@ h2{
 }
 .s05{
   top: 350px;left:10px;
-  color: #9f6a00;
+  color: var(--color04);
   font-size: 22px;
   text-shadow:0px 1px 2px #5c5656;
   animation: shake2 3s infinite;
@@ -292,7 +292,7 @@ h3{
 
 .bar::before{
   content:  attr(data-skill);
-  background-color: #ffbb62;
+  background-color: var(--bar-color01);
   display: inline-block;
   padding: 1px 0 1px 10px;
   border-radius: inherit;
@@ -301,22 +301,22 @@ h3{
 }
 
 .bar.back::before{
-  background-color: #ffa75f;
+  background-color: var(--bar-color02);
 }
 .bar.middle::before{
-  background-color: #ffbb62;
+  background-color: var(--bar-color01);
 }
 .bar.middle2::before{
-  background-color: #ffa75f;
+  background-color: var(--bar-color02);
 }
 .bar.middle3::before{
-  background-color: #ffbb62;
+  background-color: var(--bar-color01);
 }
 .bar.middle4::before{
-  background-color: #ffa75f;
+  background-color: var(--bar-color02);
 }
 .bar.front::before{
-  background-color: #ffbb62;
+  background-color: var(--bar-color01);
 }
 
 .bar.html5::before{
@@ -460,7 +460,7 @@ figcaption:hover{
 }
 .contact_sub li  span, .phone{
   color: #5c5656;
-  font-size: 18px;
+  font-size: var(--font-size02);
 }
 .contact_img{
   position: relative;
