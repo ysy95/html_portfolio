@@ -10,7 +10,7 @@ ul,ol,li{
 .project_tab{
   margin: 50px auto 0px auto;
   padding-bottom: 40px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(78,54,14,0.8);
   width: 1100px;
   height: 65vh;
 }
@@ -19,7 +19,7 @@ ul,ol,li{
 .tab_item{
   width: calc(100%/4);
   height: 50px;
-  border-bottom:3px solid #727171;
+  border-bottom:3px solid var(--color01);
   line-height: 50px;
   font-size: 16px;
   text-align: center;
@@ -33,13 +33,13 @@ ul,ol,li{
 
 /* // 선택된 탭스타일 */
 .project_tab input:checked + .tab_item{
-  background-color: #727171;
+  background-color: var(--color01);
   color: #fff;
 }
 .tab_item:hover{
   opacity: 0.75;
   cursor: pointer;
-  background-color: #727171;
+  background-color: var(--color01,0.9);
   color: #fff;
 }
 
@@ -121,17 +121,17 @@ input[name="tab_item"]{
   height: 35px;
   line-height: 35px;
   text-align: center;
-  background-color: #d1e3ff;
-  color: #477bca;
+  background-color: #ffedd1;
+  color: var(--color04);
   font-weight: bold;
   font-size: 16px;
   border-radius: 5px;
-  border: solid 2px #477bca;
+  border: solid 2px var(--color04);
 }
 .view_btn_wrap a:hover{
   cursor: pointer;
   color: #fff;
-  background-color: #477bca;
+  background-color: var(--color04);
   transition: .3s;
 }
 

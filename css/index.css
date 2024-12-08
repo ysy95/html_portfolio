@@ -83,7 +83,7 @@ h2{
   color: #a97b3f;
   text-shadow: 0px 1px 2px #a18b8b;
   font-size: 22px;
-  animation: shake2 3s infinite;
+  animation: shaking 2s infinite;
 
 }
 .s02{
@@ -96,7 +96,7 @@ h2{
   top:300px;left: 320px;
   color: #94762c;
   font-size: 22px;
-  animation: shake2 3s infinite;
+  animation: shake2 2s infinite;
 
   
 }
@@ -104,7 +104,7 @@ h2{
   color: var(--color01);
   font-size: 20px;
   top:220px;left:100px;
-  animation: shake 4s infinite;
+  animation: shaking 4s infinite;
 
 }
 .s05{
@@ -112,7 +112,7 @@ h2{
   color: var(--color04);
   font-size: 22px;
   text-shadow:0px 1px 2px #5c5656;
-  animation: shake2 3s infinite;
+  animation: shake2 2s infinite;
 
 }
 .s06{
@@ -126,7 +126,7 @@ h2{
   top: 360px;left: 200px;
   color: #675425;
   font-size: 22px;
-  animation: shake2 3s infinite;
+  animation: shaking 2s infinite;
 
 }
 @keyframes shake{
