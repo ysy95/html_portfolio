@@ -3,13 +3,13 @@ console.clear();
 let particles =[];
 const colors = ["#fbe2ab","#edc644","#fef3d2","#fac45f"];
 function pop(){
-  for(let i = 0; i < 150; i++){
+  for(let i = 0; i < 250; i++){//폭죽 개수
     const p = document.createElement('particule');
     p.x = window.innerWidth * 0.5;
     p.y = window.innerHeight + (Math.random() * window.innerHeight * 0.3);
     p.vel = {
-      x:(Math.random() - 0.5) * 10,
-      y: Math.random() * -20 -15
+      x:(Math.random() - 0.5) * 20, //넓이
+      y: Math.random() * -15 -15
     };
 
     p.mass = Math.random() * 0.2 + 0.8;
@@ -40,5 +40,5 @@ function render(){
   requestAnimationFrame(render);
 }
 pop();
-window.setTimeout(render, 700);
+window.setTimeout(render, 600);
 window.addEventListener('click', pop);
